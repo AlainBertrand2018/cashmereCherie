@@ -1,0 +1,194 @@
+/* App-specific styles */
+
+/* Section base styles */
+section {
+  position: relative;
+}
+
+/* Hero section specific */
+.hero-title,
+.hero-text,
+.hero-card {
+  will-change: transform, opacity;
+}
+
+/* Collection section */
+.collection-title,
+.collection-text {
+  will-change: transform, opacity;
+}
+
+/* Featured section */
+.featured-title,
+.featured-text {
+  will-change: transform, opacity;
+}
+
+/* Lounge section */
+.lounge-title,
+.lounge-text {
+  will-change: transform, opacity;
+}
+
+/* Craft section */
+.craft-title,
+.craft-text {
+  will-change: transform, opacity;
+}
+
+/* Gallery section */
+.gallery-title,
+.gallery-text,
+.gallery-card {
+  will-change: transform, opacity;
+}
+
+/* Card hover effects */
+.hero-card,
+.gallery-card {
+  transition: box-shadow 0.3s ease;
+}
+
+.hero-card:hover,
+.gallery-card:hover {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Button interactions */
+button {
+  transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Link underline animation */
+a .absolute {
+  transition: transform 0.3s ease;
+}
+
+/* Product card hover */
+.shop-card {
+  transition: transform 0.3s ease;
+}
+
+.shop-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Journal card hover */
+.journal-card {
+  transition: transform 0.3s ease;
+}
+
+.journal-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Menu overlay transition */
+.fixed.z-\[100\] {
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* Navigation background transition */
+nav {
+  transition: background-color 0.5s ease, backdrop-filter 0.5s ease;
+}
+
+/* Input focus states */
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px #C9A87C;
+}
+
+
+/* Responsive typography adjustments */
+@media (max-width: 768px) {
+  .text-hero {
+    font-size: clamp(48px, 15vw, 80px) !important;
+  }
+
+  .text-section {
+    font-size: clamp(40px, 12vw, 64px) !important;
+  }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Loading state */
+.loading {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.loaded {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Image loading placeholder */
+img {
+  background-color: #E9E3DA;
+}
+
+/* Smooth image rendering */
+img {
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* Prevent text selection on interactive elements */
+button,
+a {
+  user-select: none;
+}
+
+/* Focus visible for accessibility */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 2px solid #C9A87C;
+  outline-offset: 2px;
+}
+
+
+/* Custom cursor for interactive elements */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Z-index layering for pinned sections */
+main>section:nth-child(1) {
+  z-index: 10;
+}
+
+main>section:nth-child(2) {
+  z-index: 20;
+}
+
+main>section:nth-child(3) {
+  z-index: 30;
+}
+
+main>section:nth-child(4) {
+  z-index: 40;
+}
+
+main>section:nth-child(5) {
+  z-index: 50;
+}
+
+main>section:nth-child(6) {
+  z-index: 60;
+}
