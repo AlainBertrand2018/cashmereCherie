@@ -1261,6 +1261,10 @@ function FooterSection() {
             Cashmere Cherie
           </p>
           <p className="text-xs text-warmgray mt-2">Soft knits. Slow evenings.</p>
+          <p className="text-[10px] text-warmgray/60 tracking-wider uppercase mt-8">
+            © 2026 BusinessStudio AI (Alain BERTRAND). All rights reserved.
+          </p>
+
         </div>
       </div>
     </footer>
