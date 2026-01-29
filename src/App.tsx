@@ -45,9 +45,15 @@ function Navigation({ menuOpen, setMenuOpen }: { menuOpen: boolean; setMenuOpen:
           </div>
 
           <button className="p-2 hover:opacity-60 transition-opacity flex items-center gap-2">
-            <span className="text-xs tracking-wide text-charcoal">CART (0)</span>
-            <ShoppingCart className="w-4 h-4 text-charcoal" strokeWidth={1.5} />
+            <span className="text-xs tracking-wide text-charcoal hidden lg:block">CART (0)</span>
+            <div className="relative">
+              <ShoppingCart className="w-5 h-5 text-charcoal" strokeWidth={1.5} />
+              <span className="lg:hidden absolute -top-1.5 -right-1.5 bg-charcoal text-ivory text-[8px] w-3.5 h-3.5 flex items-center justify-center rounded-full leading-none">
+                0
+              </span>
+            </div>
           </button>
+
         </div>
       </nav>
 
